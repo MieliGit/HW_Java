@@ -14,10 +14,10 @@ public class Task_2 {
     }
 
     private static boolean Soluthion(String st) {
-        Deque<Character> c = new LinkedList<>();
+        Deque<String> c = new LinkedList<>();
         for (int i = 0; i < st.length(); i++) {
             if (st.charAt(i) == '(' || st.charAt(i) == '{' || st.charAt(i) == '[')
-                c.add(st.charAt(i));
+                c.add(String.valueOf(st.charAt(i)));
             else {
                 if (c.isEmpty())
                     return false;
