@@ -10,7 +10,7 @@ public class Task_2 {
                 " Марина Лугова, Анна Владимирова, Иван Мечников, Петр Петин, Иван Ежов";
         System.out.println("");
 
-        text = text.replaceAll("[-|–|—]|\\p{Punct}", " ");
+
         while (text.contains("  ")){
             text = text.replace("  ", " ");
         }
