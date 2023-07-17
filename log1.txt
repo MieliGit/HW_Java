@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-07-06T19:11:50.013490500Z</date>
-  <millis>1688670710013</millis>
-  <nanos>490500</nanos>
+  <date>2023-07-17T14:51:59.906997400Z</date>
+  <millis>1689605519906</millis>
+  <nanos>997400</nanos>
   <sequence>0</sequence>
   <logger>org.example.HW_2_2.Task_1</logger>
   <level>INFO</level>
