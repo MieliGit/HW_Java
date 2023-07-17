@@ -1,4 +1,4 @@
-июл. 17, 2023 6:01:07 PM org.example.HW_O_3.Main main
-INFO: 11
-июл. 17, 2023 6:01:08 PM org.example.HW_O_3.Main main
-INFO: 12
+июл. 17, 2023 6:04:16 PM org.example.HW_O_3.Main main
+INFO: 1234
+июл. 17, 2023 6:04:18 PM org.example.HW_O_3.Main main
+INFO: 1245

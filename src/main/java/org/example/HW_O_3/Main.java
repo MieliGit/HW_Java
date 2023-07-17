@@ -25,7 +25,7 @@ public class Main {
                 "2 - Игра с русскими словами\n" +
                 "3 - Игра с английскими словами\n");
         System.out.println();
-
+        System.out.print("Ваше число: ");
         Scanner num = new Scanner(System.in);
         int n = num.nextInt();
         if(n == 1){
