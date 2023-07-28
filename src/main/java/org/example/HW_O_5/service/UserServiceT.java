@@ -8,23 +8,24 @@ import org.example.HW_O_5.model.User;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserService implements DataService {
+public class UserServiceT implements DataServiceT {
 
-    private List<User> userList = new ArrayList<>();
+    private List<User> userListT = new ArrayList<>();
 
     @Override
     public void create(String name, String surname, String patron, Type type) {
         int id = getFreeId(type);
-        if (Type.STUDENT == type) {
-            Student student = new Student(name, surname, patron, id);
-            userList.add(student);
+
+        if (Type.TEACHER == type) {
+            Teacher teacher = new Teacher(name, surname, patron, id);
+            userListT.add(teacher);
         }
     }
 
     private int getFreeId(Type type) {
         int lastId = 0;
         boolean isStudent = Type.STUDENT == type;
-        for (User user : userList) {
+        for (User user : userListT) {
             if (user instanceof Teacher && !isStudent) {
                 lastId++;
             }
@@ -37,18 +38,17 @@ public class UserService implements DataService {
 
     @Override
     public List<User> read() {
-        return userList;
+        return userListT;
     }
 
-    @Override
-    public List<User> readOnlyStudent() {
-        List<User> students = new ArrayList<>();
-        for (User user : userList) {
-            if (user instanceof Student) {
-                students.add(user);
+
+    public List<User> readOnlyTeacher() {
+        List<User> teachers = new ArrayList<>();
+        for (User user : userListT) {
+            if (user instanceof Teacher) {
+                teachers.add(user);
             }
         }
-        return students;
+        return teachers;
     }
-
 }

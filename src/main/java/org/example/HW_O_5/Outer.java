@@ -1,13 +1,15 @@
 package org.example.HW_O_5;
 
-import org.example.HW_O_5.controller.Controller;
+import org.example.HW_O_5.controller.ControllerS;
+import org.example.HW_O_5.controller.ControllerT;
 
 import java.util.Scanner;
 
 public class Outer {
 
     public static void main(String[] args) {
-        Controller controller = new Controller();
+        ControllerS controllers = new ControllerS();
+        ControllerT controllert = new ControllerT();
 
         System.out.println("Выбрать действие:\n" +
                 "1 - Показать список учеников\n" +
@@ -17,15 +19,15 @@ public class Outer {
         Scanner num = new Scanner(System.in);
         int n = num.nextInt();
         if(n == 1){
-            controller.createStuden("Даниил","Захаров","Борисович");
-            controller.createStuden("Александор","Петрушкин","Николаевич");
-            controller.createStuden("Анна","Апельсинова","Константиновна");
-            controller.getAllStudent();
+            controllers.createStuden("Даниил","Захаров","Борисович");
+            controllers.createStuden("Александор","Петрушкин","Николаевич");
+            controllers.createStuden("Анна","Апельсинова","Константиновна");
+            controllers.getAllStudent();
         }if (n == 2){
-            controller.createTeacher("Светланна","Шишкина","Сергеевна");
-            controller.createTeacher("Николай","Кукушкин","Викторович");
-            controller.createTeacher("Ирина","Лирикова","Борисовна");
-            controller.getAllTeacher();
+            controllert.createTeacher("Светланна","Шишкина","Сергеевна");
+            controllert.createTeacher("Николай","Кукушкин","Викторович");
+            controllert.createTeacher("Ирина","Лирикова","Борисовна");
+            controllert.getAllTeacher();
         }
     }
 
