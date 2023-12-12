@@ -15,8 +15,8 @@ public class Main {
         groups.add(group2);
         groups.add(group3);
         groups.add(group4);
-        Flow flow = new FlowIterator(groups);
-        FlowIterator flowIterator = new FlowIterator(Flow);
+        Flow flow = new Flow(groups);
+        FlowIterator flowIterator = new FlowIterator(flow);
 
         while (flowIterator.hasNext()){
             System.out.println(flowIterator.next());
