@@ -16,10 +16,13 @@ public class Main {
         groups.add(group3);
         groups.add(group4);
         Flow flow = new Flow(groups);
-        FlowIterator flowIterator = new FlowIterator(flow);
-
-        while (flowIterator.hasNext()){
-            System.out.println(flowIterator.next());
+        for (Group group: flow) {
+            System.out.println(group);
         }
+//        FlowIterator flowIterator = new FlowIterator(flow);
+//
+//        while (flowIterator.hasNext()){
+//            System.out.println(flowIterator.next());
+//        }
     }
 }
