@@ -1,0 +1,24 @@
+  223 cat > 'Домашние животные'
+  224 cat > 'Вьючные животные'
+  225  history
+  226  cat 'Домашние животные' 'Вьючные животные' > Животные
+  227  ls
+  228  mv Животные 'Друзья человека'
+  229  ls
+  230  mkdir newdir
+  231  mv 'Друзья человека' newdir/
+  232  ls
+  233  tree
+  234  wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+  235  cd Загрузки sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
+  236  sudo apt-get update
+  237  history
+  238  sudo apt-get install mysql-server
+  239  systemctl status mysql
+  240  cd..
+  241  ls
+  242  wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-j_8.0.32-1ubuntu22.04_all.deb
+  243  sudo dpkg - i mysql-connector-j_8.0.32-1ubuntu22.04_all.deb
+  244  sudo dpkg -r mysql-connector-j
+  245  sudo apt-get autoremove
+  246  history
