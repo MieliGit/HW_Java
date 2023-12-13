@@ -1,6 +1,6 @@
 package Last_Work;
 
-import Last_Work.Beasts.Beast;
+import Last_Work.PackPets.PackPet;
 import Last_Work.Pets.Pet;
 
 import java.util.ArrayList;
@@ -39,7 +39,7 @@ public class Farm<T> {
                 printCollection(Pet.class);
                 break;
             case 2:
-                printCollection(Beast.class);
+                printCollection(PackPet.class);
                 break;
         }
     }

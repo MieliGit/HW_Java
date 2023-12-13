@@ -1,9 +1,9 @@
-package Last_Work.Beasts;
+package Last_Work.PackPets;
 import Last_Work.Animal;
-public class Beast extends Animal implements Employable {
+public class PackPet extends Animal implements Employable {
     private int loadCapacity;
 
-    public Beast(int id, String name, String birthdate, int loadCapacity) {
+    public PackPet(int id, String name, String birthdate, int loadCapacity) {
         super(id, name, birthdate);
         this.loadCapacity = loadCapacity;
     }

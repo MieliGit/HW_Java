@@ -1,8 +1,8 @@
-package Last_Work.Beasts;
+package Last_Work.PackPets;
 
-public class Donkey extends Beast {
+public class Camel extends PackPet {
 
-    public Donkey(int id, String name, String birthdate, int loadCapacity) {
+    public Camel(int id, String name, String birthdate, int loadCapacity) {
         super(id, name, birthdate, loadCapacity);
     }
 

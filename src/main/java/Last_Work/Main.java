@@ -2,8 +2,8 @@ package Last_Work;
 
 import java.util.Scanner;
 
-import Last_Work.Beasts.Camel;
-import Last_Work.Beasts.Donkey;
+import Last_Work.PackPets.Camel;
+import Last_Work.PackPets.Donkey;
 import Last_Work.Pets.Cat;
 import Last_Work.Pets.Dog;
 

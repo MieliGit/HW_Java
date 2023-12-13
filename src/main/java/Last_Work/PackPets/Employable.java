@@ -1,4 +1,4 @@
-package Last_Work.Beasts;
+package Last_Work.PackPets;
 
 interface Employable {
     void employ();
